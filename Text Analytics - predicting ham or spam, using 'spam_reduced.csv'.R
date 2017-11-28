@@ -87,7 +87,12 @@ rpart.cv.1 #95.17% accuracy
 
 #*****************************************************************************
 
-#Buiuding TF-IDF:
+#Building TF-IDF:
+
+#TF-IDF score of a word, ranks it's importance.
+#tfidf score of a word = tf*idf
+#where, tf : No. of times that word appear in document/Total words in document
+#and, idf : log(No. of documents/No. of documents that contain that word)
 
 #    1 - The TF calculation accounts for the fact that longer 
 #        documents will have higher individual term counts. Applying
