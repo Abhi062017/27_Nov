@@ -209,7 +209,7 @@ stopCluster(cl)
 rpart.cv.3 #95.30% accuracy
 
 #******************************************************************************
-#SVD:Singular value decomposition
+#SVD: Singular value decomposition
 
 #Use 'irlba' for SVD. 'irlba' allows us to specify
 #the number of the most important singular vectors we wish to
@@ -219,6 +219,7 @@ library(irlba)
 train.irlba <- irlba(t(train.tokens.tfidf), nv = 300, maxit = 600)
 View(train.irlba$v)
 
+#LSA: Latent Semantic Analysis
 # As with TF-IDF, we will need to project new data (e.g., the test data)
 # into the SVD semantic space. The following code illustrates how to do
 # this using a row of the training data that has already been transformed
